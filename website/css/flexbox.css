@@ -1,18 +1,12 @@
 /* flexbox style sheet */
 
 body{
-    width: 800px;
-    margin: 0px auto;
+    /*width: 800px;
+    margin: 0px auto;*/
     /*text-align: left;*/
     font: 15px arial, sans-serif;
 } 
-.container{
-    display: flex;
-    flex-wrap: wrap;
-}
-/*.item2{
-    display: flex;
-}*/
+
 #header{
     text-align: center;
     width: 800px;
@@ -21,19 +15,21 @@ body{
     color: #448000;
     font-weight: bolder;
 }
+
 /* nav クラスで高さと幅を決める*/
 .nav {
     width: 800px;
     height: 35px;
     background-color: #00F7FF;
-    padding: 15px 0px 0px 0px;
-    
+    padding: 15px 0px 0px 0px;  
 }
+
 /* 横並びにするためにブロック要素からインライン要素に変更。*/
 ul, li{
     display: inline;
     padding:5px 5px 3px 5px;
 }
+
 .article{
     width: 500px;
     height: 300px;
@@ -42,6 +38,7 @@ ul, li{
     color: blue;
     font-weight: bolder;
 }
+
 #section{
     width: 500px;
     height: 100px;
@@ -49,18 +46,21 @@ ul, li{
     margin: 20px 0px 10px 0px;
     font-weight: bolder;
 }
+
 .aside{
-    width: 250px;
-    height: 250px;
+    width: 300px;
+    height: 300px;
     text-align: center;
     color: #610606;
     background-color: #A5742A;
 }
+
 /*linkのアンダーラインけす*/
 #link a {
     text-decoration: none;
 
 }
+
 /* hover color*/
 #link a:hover{
     color: yellow;
@@ -74,4 +74,18 @@ ul, li{
     color: #448000;
     background-color: pink;
     font-weight: bolder;
+}
+/* flexboxは直下の子要素に適応する*/
+.container{
+    display: -webkit-flex;
+    display: flex;
+    flex-wrap: wrap;
+    width: 800px;
+    height: 415px;
+    margin: auto;
+    background-color: beige;
+    
+}
+.item{
+    margin: 0px;
 }
