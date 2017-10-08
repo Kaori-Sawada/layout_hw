@@ -6,7 +6,7 @@
   <link href="css/relative.css" rel="stylesheet">
 </head>
 <body>
-    <header id="header">&lt;Header&gt;</header>
+    <header id="header" style="font-weight: bolder">&lt;Header&gt;</header>
     <nav class="nav"> 
       <ul>
         <li id="link"><a href="index.html">Home</a></li>
@@ -17,11 +17,18 @@
         <li id="link"><a href="flexbox.html">Flexbox Layout (Extra Credit)</a></li>
       </ul>
     </nav>
-    <article class="article"> &lt;My Article&gt;
-      <section id="section">&lt;Section One&gt;</section>
-      <section id="section">&lt;Section Two&gt;</section>
-    </article>
-    <aside class="aside">&lt;Aside&gt;</aside>
-    <footer class="footer">&lt;Footer&gt;</footer>
+      <article class="article" style="font-weight: bolder"> &lt;My Article&gt;
+        <section id="section" style="font-weight: bolder">&lt;Section One&gt;</section>
+        <section id="section" style="font-weight: bolder">&lt;Section Two&gt;</section>
+      </article>
+    <div class="relative">
+      <aside class="aside"><p style="font-weight: bolder">&lt;Aside&gt;</p>
+          <p style="color: black"><span>I put a relative class to align the aside box.</span><span> I used relative position in this block.</span></p>        
+      </aside>
+    </div>
+    
+    <div class="relative2">
+    <footer class="footer" style="font-weight: bolder">&lt;Footer&gt;</footer>
+  </div>
   </body>
   </html>

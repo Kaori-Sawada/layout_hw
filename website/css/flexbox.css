@@ -1,13 +1,18 @@
-/* static style sheet */
+/* flexbox style sheet */
 
 body{
     width: 800px;
-    /*margin: 0px auto;*/
+    margin: 0px auto;
     /*text-align: left;*/
-    position: static;
     font: 15px arial, sans-serif;
 } 
-
+.container{
+    display: flex;
+    flex-wrap: wrap;
+}
+/*.item2{
+    display: flex;
+}*/
 #header{
     text-align: center;
     width: 800px;

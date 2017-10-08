@@ -7,6 +7,7 @@ body{
     right: 0;
     bottom: 0;
     margin: auto;
+    font: 15px arial, sans-serif;
 } 
 
 #header{
@@ -22,6 +23,7 @@ body{
     height: 35px;
     background-color: #00F7FF;
     padding: 15px 0px 0px 0px;
+    
 }
 /* 横並びにするためにブロック要素からインライン要素に変更。*/
 ul, li{
@@ -35,12 +37,14 @@ ul, li{
     text-align: center;
     background-color: #FFBB00;
     color: blue;
+    float: right;
 }
 #section{
     width: 500px;
     height: 100px;
     background-color: #00FFD5;
     margin: 20px 0px 10px 0px;
+    font-weight: bolder;
 }
 .aside{
     width: 300px;
@@ -51,6 +55,13 @@ ul, li{
     float: right;
 
 }
+
+p span {
+    display: block;
+    text-align: left;
+    padding: 5px;
+}
+
 /*linkのアンダーラインけす*/
 #link a {
     text-decoration: none;

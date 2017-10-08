@@ -1,13 +1,11 @@
 /* relative style sheet */
 
-/* set body position relative, to center set px in both left and right */
+/*  */
 body{
     width: 800px;
     margin: 0px auto;
-    position: relative;
-    left: 25px;
-    right: 25px;
-    
+    /*position: relative;*/
+    font: 15px arial, sans-serif;
 } 
 
 #header{
@@ -17,7 +15,7 @@ body{
     height: 50px;
     color: #448000;
 }
-/* nav クラスで高さと幅を決める*/
+/* nav クラスでmenu boxの高さと幅と色を決める*/
 .nav {
     width: 800px;
     height: 35px;
@@ -36,6 +34,7 @@ ul, li{
     text-align: center;
     background-color: #FFBB00;
     color: blue;
+    display: inline-block;
 }
 #section{
     width: 500px;
@@ -43,12 +42,34 @@ ul, li{
     background-color: #00FFD5;
     margin: 20px 0px 10px 0px;
 }
-/* to align aside box remove the wigth */ 
+/*  */ 
 .aside{
-    height: 250px;
+    width: 300px;
+    height: 300px;
     text-align: center;
     color: #610606;
     background-color: #A5742A;
+    /*display: inline-block;*/
+}
+
+p span {
+        display: block;
+        text-align: left;
+        padding: 5px;
+}
+
+/* to align the aside box using relative position*/
+.relative{
+    position: relative;
+    top: -300px;
+    left: 500px;
+
+}
+/* to align the footer using relative position */
+.relative2{
+    position: relative;
+    top: -300px;
+
 }
 /*linkのアンダーラインけす*/
 #link a {
@@ -67,4 +88,5 @@ ul, li{
     text-align: center;
     color: #448000;
     background-color: pink;
+    /*clear: both;*/
 }
