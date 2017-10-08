@@ -1,10 +1,12 @@
-/* static style sheet */
+/* absolute style sheet */
 
 body{
     width: 800px;
-    /*margin: 0px auto;*/
-    /*text-align: left;*/
-    /*position: static;*/
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
 } 
 
 #header{
@@ -25,6 +27,7 @@ body{
 ul, li{
     display: inline;
     padding:5px 5px 3px 5px;
+    
 }
 .article{
     width: 500px;
@@ -40,11 +43,13 @@ ul, li{
     margin: 20px 0px 10px 0px;
 }
 .aside{
-    width: 250px;
-    height: 250px;
+    width: 300px;
+    height: 300px;
     text-align: center;
     color: #610606;
     background-color: #A5742A;
+    float: right;
+
 }
 /*linkのアンダーラインけす*/
 #link a {
@@ -63,4 +68,8 @@ ul, li{
     text-align: center;
     color: #448000;
     background-color: pink;
+    clear: both;
 }
+/*div.aa{
+    float: left;
+}*/

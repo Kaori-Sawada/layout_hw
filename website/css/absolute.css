@@ -1,10 +1,15 @@
-/* static style sheet */
-
+/* absolute style sheet */
 body{
     width: 800px;
     /*margin: 0px auto;*/
-    /*text-align: left;*/
-    /*position: static;*/
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    font: 15px arial, sans-serif;
+     
 } 
 
 #header{
@@ -21,10 +26,11 @@ body{
     background-color: #00F7FF;
     padding: 15px 0px 0px 0px;
 }
-/* 横並びにするためにブロック要素からインライン要素に変更。*/
+/* menuを横並びにするためにブロック要素からインライン要素に変更。*/
 ul, li{
     display: inline;
     padding:5px 5px 3px 5px;
+    
 }
 .article{
     width: 500px;
@@ -40,12 +46,22 @@ ul, li{
     margin: 20px 0px 10px 0px;
 }
 .aside{
-    width: 250px;
-    height: 250px;
+    width: 300px;
+    position: absolute;
+    top: 100px;
+    left: 500px;
+    height: 300px;
     text-align: center;
     color: #610606;
     background-color: #A5742A;
+
 }
+p span {
+    display: block;
+    text-align: left;
+    padding: 5px;
+}
+
 /*linkのアンダーラインけす*/
 #link a {
     text-decoration: none;
@@ -63,4 +79,9 @@ ul, li{
     text-align: center;
     color: #448000;
     background-color: pink;
+    clear: both;
 }
+
+/*div.aa{
+    float: left;
+}*/
